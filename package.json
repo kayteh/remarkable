@@ -1,0 +1,23 @@
+{
+  "name": "remarkable",
+  "version": "1.0.0",
+  "repository": "git@github.com:kayteh/remarkable.git",
+  "author": "Katalina Okano <git@kat.cafe>",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "main": "index.js",
+  "scripts": {
+    "start": "yarn workspace remarkable-web start"
+  },
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "prettier": "^2.3.2",
+    "prettier-plugin-organize-imports": "^2.3.3",
+    "prettier-plugin-pkg": "^0.10.0",
+    "stylelint": "^13.13.1",
+    "typescript": "^4.4.2"
+  }
+}
