@@ -2,6 +2,7 @@ import React from "react";
 import { createGlobalStyle } from "styled-components";
 import { Header } from "./components/Header";
 import { LeftNav } from "./components/LeftNav";
+import { Note } from "./components/Note";
 import { ThemeContextProvider } from "./contexts/ThemeContext";
 
 const GlobalStyles = createGlobalStyle`
@@ -21,6 +22,13 @@ function App() {
           <GlobalStyles />
           <Header />
           <LeftNav />
+          <Note
+            note={{
+              id: "aaa",
+              title: "Secret Fox Capture Plans",
+              body: "## This is my plan!!!\n\nShe will never see it coming!!",
+            }}
+          />
         </>
       </ThemeContextProvider>
     </>
